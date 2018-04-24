@@ -11,6 +11,9 @@
 # Read system properties managed by zygote.
 allow appdomain zygote_tmpfs:file read;
 
+# Read contacts Managed by Contact
+allow appdomain priv_app_tmpfs:file read;
+
 # WebView and other application-specific JIT compilers
 allow appdomain self:process execmem;
 
