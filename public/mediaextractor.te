@@ -24,6 +24,7 @@ crash_dump_fallback(mediaextractor)
 
 # allow mediaextractor read permissions for file sources
 allow mediaextractor media_rw_data_file:file { getattr read };
+allow mediaextractor vfat:file { getattr read };
 allow mediaextractor app_data_file:file { getattr read };
 
 # Read resources from open apk files passed over Binder
